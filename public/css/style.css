@@ -5,3 +5,9 @@ h2{
 .error{
     color: red;
 }
+
+.heading{
+    text-align: center;
+    margin: 0 auto;
+    color: #198754;
+}
