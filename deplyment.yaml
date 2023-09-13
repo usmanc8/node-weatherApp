@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: weatherapp-deployment
+  labels:
+    app: weatherapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: weatherapp
+  template:
+    metadata:
+      labels:
+        app: weatherapp
+    spec:
+      containers:
+      - name: weatherapp
+        image: usmanc8/weatherapp:latest
+        ports:
+        - containerPort: 3000
