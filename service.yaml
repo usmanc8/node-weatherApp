@@ -8,4 +8,4 @@ spec:
   ports:
     - port: 3000            #This is the service port
       targetPort: 3000      #This is the container port
-  type: LoadBalancer
+  type: LoadBalancer        #type of service

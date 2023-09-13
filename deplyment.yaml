@@ -5,7 +5,7 @@ metadata:
   labels:
     app: weatherapp
 spec:
-  replicas: 1
+  replicas: 1                             #Number of pods
   selector:
     matchLabels:
       app: weatherapp
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: weatherapp
-        image: usmanc8/weatherapp:latest
+        image: usmanc8/weatherapp:latest      #Docker image
         ports:
         - containerPort: 3000
